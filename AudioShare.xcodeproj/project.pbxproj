@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		74C0790877C151C507F7D58F /* Pods_AudioShare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A4D33F5EB85727A01F9FCDB /* Pods_AudioShare.framework */; };
+		9780CFC41EFFA0BB00C8D461 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9780CFC31EFFA0BA00C8D461 /* UserCell.swift */; };
+		9780CFC61EFFA0C900C8D461 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9780CFC51EFFA0C900C8D461 /* PostCell.swift */; };
+		9780CFC81EFFB02600C8D461 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9780CFC71EFFB02600C8D461 /* User.swift */; };
 		97F849D71EFA672F0065340C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F849D61EFA672F0065340C /* AppDelegate.swift */; };
 		97F849D91EFA672F0065340C /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F849D81EFA672F0065340C /* FirstViewController.swift */; };
 		97F849DB1EFA672F0065340C /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F849DA1EFA672F0065340C /* SecondViewController.swift */; };
 		97F849DE1EFA672F0065340C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97F849DC1EFA672F0065340C /* Main.storyboard */; };
 		97F849E01EFA672F0065340C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97F849DF1EFA672F0065340C /* Assets.xcassets */; };
 		97F849E31EFA672F0065340C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97F849E11EFA672F0065340C /* LaunchScreen.storyboard */; };
-		97F849EE1EFA672F0065340C /* AudioShareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F849ED1EFA672F0065340C /* AudioShareTests.swift */; };
-		97F849F91EFA672F0065340C /* AudioShareUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F849F81EFA672F0065340C /* AudioShareUITests.swift */; };
+		97F84A071EFA67EE0065340C /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F84A061EFA67EE0065340C /* SignUp.swift */; };
+		97F84A091EFA6F570065340C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 97F84A081EFA6F570065340C /* GoogleService-Info.plist */; };
+		97F84A0B1EFA83A10065340C /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F84A0A1EFA83A10065340C /* UsersViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A4D33F5EB85727A01F9FCDB /* Pods_AudioShare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AudioShare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A3E05808EAA7A15AB5EA61E /* Pods-AudioShare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioShare.release.xcconfig"; path = "Pods/Target Support Files/Pods-AudioShare/Pods-AudioShare.release.xcconfig"; sourceTree = "<group>"; };
+		5BAD52FEEB30643523038833 /* Pods-AudioShare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioShare.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AudioShare/Pods-AudioShare.debug.xcconfig"; sourceTree = "<group>"; };
+		6A218B29719A527E49953BAD /* Pods_AudioShareUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AudioShareUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		973DFBD2D4A1B7C0F4F5F04E /* Pods_AudioShareTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AudioShareTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9780CFC31EFFA0BA00C8D461 /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		9780CFC51EFFA0C900C8D461 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		9780CFC71EFFB02600C8D461 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		97F849D31EFA672F0065340C /* AudioShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97F849D61EFA672F0065340C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		97F849D81EFA672F0065340C /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -44,11 +57,10 @@
 		97F849E21EFA672F0065340C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		97F849E41EFA672F0065340C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		97F849E91EFA672F0065340C /* AudioShareTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AudioShareTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		97F849ED1EFA672F0065340C /* AudioShareTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioShareTests.swift; sourceTree = "<group>"; };
-		97F849EF1EFA672F0065340C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		97F849F41EFA672F0065340C /* AudioShareUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AudioShareUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		97F849F81EFA672F0065340C /* AudioShareUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioShareUITests.swift; sourceTree = "<group>"; };
-		97F849FA1EFA672F0065340C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97F84A061EFA67EE0065340C /* SignUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
+		97F84A081EFA6F570065340C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		97F84A0A1EFA83A10065340C /* UsersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74C0790877C151C507F7D58F /* Pods_AudioShare.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,13 +89,60 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		435FE689B1DDDC14A3703421 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5BAD52FEEB30643523038833 /* Pods-AudioShare.debug.xcconfig */,
+				3A3E05808EAA7A15AB5EA61E /* Pods-AudioShare.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5F8DB7C32420227D7A45B1DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A4D33F5EB85727A01F9FCDB /* Pods_AudioShare.framework */,
+				973DFBD2D4A1B7C0F4F5F04E /* Pods_AudioShareTests.framework */,
+				6A218B29719A527E49953BAD /* Pods_AudioShareUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9780CFC01EFFA07600C8D461 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				9780CFC71EFFB02600C8D461 /* User.swift */,
+			);
+			name = Objects;
+			sourceTree = "<group>";
+		};
+		9780CFC11EFFA07D00C8D461 /* Custom Cell */ = {
+			isa = PBXGroup;
+			children = (
+				9780CFC31EFFA0BA00C8D461 /* UserCell.swift */,
+				9780CFC51EFFA0C900C8D461 /* PostCell.swift */,
+			);
+			name = "Custom Cell";
+			sourceTree = "<group>";
+		};
+		9780CFC21EFFA08700C8D461 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				97F849D81EFA672F0065340C /* FirstViewController.swift */,
+				97F84A0A1EFA83A10065340C /* UsersViewController.swift */,
+				97F84A061EFA67EE0065340C /* SignUp.swift */,
+				97F849DA1EFA672F0065340C /* SecondViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
 		97F849CA1EFA672F0065340C = {
 			isa = PBXGroup;
 			children = (
 				97F849D51EFA672F0065340C /* AudioShare */,
-				97F849EC1EFA672F0065340C /* AudioShareTests */,
-				97F849F71EFA672F0065340C /* AudioShareUITests */,
 				97F849D41EFA672F0065340C /* Products */,
+				435FE689B1DDDC14A3703421 /* Pods */,
+				5F8DB7C32420227D7A45B1DF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,33 +159,17 @@
 		97F849D51EFA672F0065340C /* AudioShare */ = {
 			isa = PBXGroup;
 			children = (
+				9780CFC21EFFA08700C8D461 /* View Controllers */,
+				9780CFC11EFFA07D00C8D461 /* Custom Cell */,
+				9780CFC01EFFA07600C8D461 /* Objects */,
 				97F849D61EFA672F0065340C /* AppDelegate.swift */,
-				97F849D81EFA672F0065340C /* FirstViewController.swift */,
-				97F849DA1EFA672F0065340C /* SecondViewController.swift */,
 				97F849DC1EFA672F0065340C /* Main.storyboard */,
 				97F849DF1EFA672F0065340C /* Assets.xcassets */,
 				97F849E11EFA672F0065340C /* LaunchScreen.storyboard */,
+				97F84A081EFA6F570065340C /* GoogleService-Info.plist */,
 				97F849E41EFA672F0065340C /* Info.plist */,
 			);
 			path = AudioShare;
-			sourceTree = "<group>";
-		};
-		97F849EC1EFA672F0065340C /* AudioShareTests */ = {
-			isa = PBXGroup;
-			children = (
-				97F849ED1EFA672F0065340C /* AudioShareTests.swift */,
-				97F849EF1EFA672F0065340C /* Info.plist */,
-			);
-			path = AudioShareTests;
-			sourceTree = "<group>";
-		};
-		97F849F71EFA672F0065340C /* AudioShareUITests */ = {
-			isa = PBXGroup;
-			children = (
-				97F849F81EFA672F0065340C /* AudioShareUITests.swift */,
-				97F849FA1EFA672F0065340C /* Info.plist */,
-			);
-			path = AudioShareUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,9 +179,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 97F849FD1EFA672F0065340C /* Build configuration list for PBXNativeTarget "AudioShare" */;
 			buildPhases = (
+				98E6B211E575E3FA1087C12F /* [CP] Check Pods Manifest.lock */,
 				97F849CF1EFA672F0065340C /* Sources */,
 				97F849D01EFA672F0065340C /* Frameworks */,
 				97F849D11EFA672F0065340C /* Resources */,
+				179F2AC0BC7EFB4F950E9FC5 /* [CP] Embed Pods Frameworks */,
+				72DB4438668D48B93B28094D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -236,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				97F849E31EFA672F0065340C /* LaunchScreen.storyboard in Resources */,
+				97F84A091EFA6F570065340C /* GoogleService-Info.plist in Resources */,
 				97F849E01EFA672F0065340C /* Assets.xcassets in Resources */,
 				97F849DE1EFA672F0065340C /* Main.storyboard in Resources */,
 			);
@@ -257,14 +305,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		179F2AC0BC7EFB4F950E9FC5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AudioShare/Pods-AudioShare-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72DB4438668D48B93B28094D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AudioShare/Pods-AudioShare-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		98E6B211E575E3FA1087C12F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		97F849CF1EFA672F0065340C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9780CFC61EFFA0C900C8D461 /* PostCell.swift in Sources */,
 				97F849DB1EFA672F0065340C /* SecondViewController.swift in Sources */,
+				97F84A071EFA67EE0065340C /* SignUp.swift in Sources */,
+				9780CFC41EFFA0BB00C8D461 /* UserCell.swift in Sources */,
+				9780CFC81EFFB02600C8D461 /* User.swift in Sources */,
 				97F849D71EFA672F0065340C /* AppDelegate.swift in Sources */,
 				97F849D91EFA672F0065340C /* FirstViewController.swift in Sources */,
+				97F84A0B1EFA83A10065340C /* UsersViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,7 +373,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97F849EE1EFA672F0065340C /* AudioShareTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +380,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97F849F91EFA672F0065340C /* AudioShareUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,11 +515,12 @@
 		};
 		97F849FE1EFA672F0065340C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BAD52FEEB30643523038833 /* Pods-AudioShare.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AudioShare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = kpujara.AudioShare;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AudioShare.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -428,11 +528,12 @@
 		};
 		97F849FF1EFA672F0065340C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A3E05808EAA7A15AB5EA61E /* Pods-AudioShare.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AudioShare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = kpujara.AudioShare;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AudioShare.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -511,6 +612,7 @@
 				97F849FF1EFA672F0065340C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		97F84A001EFA672F0065340C /* Build configuration list for PBXNativeTarget "AudioShareTests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +621,7 @@
 				97F84A021EFA672F0065340C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		97F84A031EFA672F0065340C /* Build configuration list for PBXNativeTarget "AudioShareUITests" */ = {
 			isa = XCConfigurationList;
@@ -527,6 +630,7 @@
 				97F84A051EFA672F0065340C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

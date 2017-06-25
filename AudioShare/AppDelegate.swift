@@ -7,15 +7,31 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
+
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        FIRApp.configure()
+        
+        FIRAuth.auth()?.signIn(withEmail: "kedar1@test.com", password: "123456", completion: { (user, error) in
+            if error == nil {
+                print(user?.email)
+            } else {
+                print(error?.localizedDescription)
+            }
+        })
+        
         return true
     }
 

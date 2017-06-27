@@ -10,11 +10,13 @@ import Foundation
 import UIKit
 import Firebase
 import FirebaseDatabase
+import FirebaseStorage
 import Alamofire
 
 class SignUp: UIViewController {
     
     var ref: FIRDatabaseReference!
+    //var userStorage: FIRStorageReference!
     
     @IBOutlet weak var email: UITextField!
     
@@ -28,6 +30,9 @@ class SignUp: UIViewController {
         
         ref = FIRDatabase.database().reference()
         
+       //let storage = FIRStorage.storage().reference(forURL: "gs://audioshare-k24.com")
+        //userStorage = storage.child("users")
+        
     }
     
     
@@ -40,10 +45,17 @@ class SignUp: UIViewController {
                 print(error.localizedDescription)
             }
             
+            let followers = [String]()
+            let following = [String]()
             if let user = user {
-            
+                let changeRequest = FIRAuth.auth()?.currentUser?.profileChangeRequest()
+                changeRequest?.displayName = self.username.text
+                changeRequest?.commitChanges(completion: nil
+                )
                 let userInfo: [String : Any] = ["uid" : user.uid,
-                                            "username" : self.username.text!]
+                                            "username" : self.username.text!,
+                                            "followers": followers,
+                                            "following": following]
             
                 self.ref.child("users").child(user.uid).setValue(userInfo)
             }
